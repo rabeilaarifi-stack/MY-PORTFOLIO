@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ربيع العريفي | مخرج إبداعي رقمي</title>
+    <meta name="description" content="محفظة أعمال احترافية للمخرج الإبداعي ربيع العريفي. متخصص في صفحات الهبوط، الإعلانات، وتصاميم المتاجر الإلكترونية.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                orange: '#f48221',
+                blue: '#0085fe',
+                dark: '#3e3e40',
+                lightblue: '#9dd0ff',
+                bg: '#F4F7F9'
+              }
+            },
+            fontFamily: {
+              sans: ['Cairo', 'sans-serif'],
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'fade-in': 'fadeIn 0.2s ease-out forwards',
+              'scale-up': 'scaleUp 0.3s ease-out forwards',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              scaleUp: {
+                '0%': { transform: 'scale(0.95)', opacity: '0' },
+                '100%': { transform: 'scale(1)', opacity: '1' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #9dd0ff;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #0085fe;
+      }
+      
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+      
+      .glass-card {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        transition: all 0.3s ease;
+      }
+      
+      .glass-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px -10px rgba(0, 133, 254, 0.2);
+        border-color: #0085fe;
+      }
+
+      /* Global Image Reset as requested */
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* RTL specific utilities */
+      [dir="rtl"] .flip-x {
+        transform: scaleX(-1);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-bg text-brand-dark antialiased selection:bg-brand-blue selection:text-white leading-loose tracking-normal" dir="rtl">
+    <div id="root"></div>
+  </body>
+</html>
